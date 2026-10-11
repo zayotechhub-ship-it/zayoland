@@ -20,6 +20,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Refined the page styling to a more premium luxury-tech look with gold accents, cleaner spacing, and stronger brand presentation.
 - Replaced the direct Call Now and Copy Link actions with a dedicated Contact Us entry and created a dedicated contact page.
 - Added the contact information page with the business email zayotechhub@gmail.com and direct links to social/store channels.
+- Added Umami analytics tracking script to the homepage and contact page for visitor count monitoring.
+- Replaced the Daraz placeholder with the live Daraz shop link: https://www.daraz.com.bd/shop/b8uunfmq.
+- Updated the homepage browser title to "Zayo Tech Hub | Premium Tech & Gadgets".
 
 ### Fixed
 - No fixes recorded yet.
