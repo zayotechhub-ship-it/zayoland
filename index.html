@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect & Shop | Official Links</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            daraz: '#F85606',
+            fb: '#1877F2',
+            store: '#0D9488',
+          },
+          animation: {
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 4s ease-in-out infinite',
+          },
+          keyframes: {
+            pulseSubtle: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+              '50%': { transform: 'scale(1.02)', opacity: '0.96' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background:
+        linear-gradient(135deg, rgba(22, 25, 35, 0.85) 0%, rgba(9, 12, 19, 0.9) 40%, rgba(15, 23, 42, 0.88) 100%),
+        url('asset/banner.jpg') center/cover no-repeat fixed;
+      min-height: 100vh;
+      color: #f3f4f6;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.42);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 18px 45px -18px rgba(0, 0, 0, 0.7);
+    }
+    .glass-card:hover {
+      background: rgba(15, 23, 42, 0.55);
+      border-color: rgba(212, 175, 55, 0.35);
+      box-shadow: 0 22px 50px -18px rgba(0, 0, 0, 0.8);
+    }
+    .ambient-glow {
+      position: fixed;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.25;
+    }
+    .brand-shell {
+      background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(212,175,55,0.12));
+      border: 1px solid rgba(212,175,55,0.45);
+      box-shadow: 0 0 0 5px rgba(15, 23, 42, 0.28), 0 30px 60px -20px rgba(0,0,0,0.7);
+    }
+    .soft-divider {
+      background: linear-gradient(90deg, transparent, rgba(212,175,55,0.6), transparent);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-indigo-500 selection:text-white flex flex-col justify-between items-center min-h-screen px-4 py-8 relative overflow-x-hidden">
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow bg-indigo-600 top-[-100px] left-1/2 -translate-x-1/2"></div>
+  <div class="ambient-glow bg-orange-600 bottom-10 right-[-100px] opacity-20"></div>
+
+  <!-- Top Navigation & Action Row -->
+  <header class="w-full max-w-md mx-auto flex items-center justify-between mb-4 z-10">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-400/25 shadow-lg shadow-emerald-500/10">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping mr-1.5 inline-block"></span>
+        Verified Hub
+      </span>
+    </div>
+
+    <!-- Share / View QR Button -->
+    <button 
+      id="openQrBtn" 
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-white/10 hover:bg-white/15 text-slate-200 border border-white/10 transition-all duration-200 active:scale-95 shadow-lg shadow-slate-900/20"
+      title="View QR Code & Share"
+    >
+      <i class="fa-solid fa-qrcode text-sm"></i>
+      <span>Share QR</span>
+    </button>
+  </header>
+
+  <!-- Main Profile Card Container -->
+  <main class="w-full max-w-md mx-auto flex-1 flex flex-col items-center z-10">
+    
+    <!-- Profile & Branding -->
+    <div class="flex flex-col items-center text-center mb-8">
+      <!-- Avatar with subtle glow ring -->
+      <div class="relative group cursor-pointer mb-4 animate-float">
+        <div class="brand-shell w-28 h-28 rounded-full p-2 flex items-center justify-center">
+          <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-2 border-slate-950 flex items-center justify-center">
+            <img src="asset/logo.png" alt="Zayo Tech Hub logo" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <!-- Official Badge -->
+        <span class="absolute bottom-2 right-2 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs shadow-md border-2 border-slate-900" title="Official Profile">
+          <i class="fa-solid fa-check"></i>
+        </span>
+      </div>
+
+      <!-- Business Name & Handles -->
+      <h1 class="font-display font-bold text-3xl md:text-4xl tracking-tight text-white flex items-center gap-2">
+        Zayo Tech Hub
+      </h1>
+      <p class="text-sm font-medium text-amber-300 mt-2 uppercase tracking-[0.2em] text-[10px]">Premium Tech & Gadget Market</p>
+
+      <div class="soft-divider h-px w-20 my-3"></div>
+
+      <!-- Welcome / Instruction Text -->
+      <p class="text-sm text-slate-200 max-w-xs leading-relaxed">
+        Discover premium tech essentials, smart deals, and the newest gadgets curated for modern lifestyles.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+        <span class="rounded-full border border-amber-400/30 bg-amber-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-200">Premium</span>
+        <span class="rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-200">Trusted</span>
+        <span class="rounded-full border border-indigo-400/30 bg-indigo-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-indigo-200">Fast Delivery</span>
+      </div>
+    </div>
+
+    <!-- Primary 3 Action Links -->
+    <div class="w-full space-y-4">
+
+      <!-- LINK 1: Facebook Page -->
+      <a 
+        href="https://www.facebook.com/zayo.techhub" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="glass-card group w-full p-4 rounded-2xl flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10 active:scale-[0.98]"
+      >
+        <div class="flex items-center gap-4">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-[#1877F2] border border-blue-500/30 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-[#1877F2] group-hover:text-white transition-all duration-300">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <!-- Label -->
+          <div class="text-left">
+            <div class="flex items-center gap-1.5">
+              <span class="font-semibold text-white text-base group-hover:text-blue-300 transition-colors">Facebook</span>
+            </div>
+            <p class="text-xs text-slate-400">Follow us for updates and community posts</p>
+          </div>
+        </div>
+        <!-- Arrow Indicator -->
+        <div class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-white group-hover:bg-white/10 group-hover:translate-x-1 transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </div>
+      </a>
+
+      <!-- LINK 2: E-Commerce Store (Official Website) -->
+      <a 
+        href="https://zayotech.pathao.shop/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="glass-card relative overflow-hidden group w-full p-4 rounded-2xl flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-teal-500/10 active:scale-[0.98] border-teal-500/30 bg-teal-950/10"
+      >
+        <!-- Highlight ribbon -->
+        <span class="absolute top-2 right-3 text-[10px] font-bold tracking-wider uppercase text-teal-300 bg-teal-500/20 px-2 py-0.5 rounded-full border border-teal-500/30">
+          Official Store
+        </span>
+
+        <div class="flex items-center gap-4">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 border border-teal-500/30 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <!-- Label -->
+          <div class="text-left">
+            <div class="flex items-center gap-1.5">
+              <span class="font-semibold text-white text-base group-hover:text-teal-300 transition-colors">E-Commerce</span>
+            </div>
+            <p class="text-xs text-slate-400">Shop gadgets, accessories & essentials</p>
+          </div>
+        </div>
+        <!-- Arrow Indicator -->
+        <div class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-white group-hover:bg-white/10 group-hover:translate-x-1 transition-all mt-4">
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </div>
+      </a>
+
+      <!-- LINK 3: Daraz Store -->
+      <div class="glass-card group w-full p-4 rounded-2xl flex items-center justify-between opacity-75 cursor-not-allowed">
+        <div class="flex items-center gap-4">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-[#F85606] border border-orange-500/30 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <!-- Label -->
+          <div class="text-left">
+            <div class="flex items-center gap-1.5">
+              <span class="font-semibold text-white text-base">Daraz</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-400 px-1.5 py-0.5 rounded font-bold uppercase">Coming Soon</span>
+            </div>
+            <p class="text-xs text-slate-400">Launching soon with exclusive offers</p>
+          </div>
+        </div>
+        <div class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400">
+          <i class="fa-solid fa-clock text-xs"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Direct Contact Options -->
+    <div class="w-full mt-6 p-4 rounded-2xl glass-card flex items-center justify-around text-center text-xs text-slate-400">
+      <a href="contact.html" class="flex flex-col items-center gap-1.5 hover:text-white transition-colors">
+        <div class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-sm text-slate-300">
+          <i class="fa-solid fa-message"></i>
+        </div>
+        <span>Contact Us</span>
+      </a>
+      <div class="h-6 w-[1px] bg-white/10"></div>
+      <a href="mailto:zayotechhub@gmail.com" class="flex flex-col items-center gap-1.5 hover:text-white transition-colors">
+        <div class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-sm text-slate-300">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <span>Email Us</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-8 text-center text-xs text-slate-500 z-10 w-full max-w-md">
+    <p>© 2026 Zayo Tech Hub. All Rights Reserved.</p>
+    <p class="mt-1 text-[11px] text-slate-600">Scan via phone camera to open in browser</p>
+  </footer>
+
+  <!-- QR Code Modal Dialog -->
+  <div id="qrModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="glass-card bg-slate-900/90 border border-white/15 p-6 rounded-3xl max-w-xs w-full text-center relative shadow-2xl scale-95 transition-transform duration-300" id="modalCard">
+      
+      <!-- Close button -->
+      <button id="closeQrBtn" class="absolute top-4 right-4 text-slate-400 hover:text-white w-8 h-8 rounded-full bg-white/5 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <h3 class="font-display font-semibold text-lg text-white mb-1">Scan This QR Code</h3>
+      <p class="text-xs text-slate-400 mb-4">Share all official store links in one tap</p>
+
+      <!-- SVG QR Code Display -->
+      <div class="bg-white p-3 rounded-2xl mx-auto shadow-inner flex flex-col items-center justify-center w-52 h-52">
+        <svg class="w-full h-full text-slate-950" viewBox="0 0 100 100" fill="currentColor">
+          <!-- Stylized QR Code Path representation -->
+          <!-- Top Left Marker -->
+          <rect x="10" y="10" width="22" height="22" rx="3" fill="#0f172a" />
+          <rect x="14" y="14" width="14" height="14" rx="2" fill="#ffffff" />
+          <rect x="17" y="17" width="8" height="8" rx="1" fill="#0f172a" />
+
+          <!-- Top Right Marker -->
+          <rect x="68" y="10" width="22" height="22" rx="3" fill="#0f172a" />
+          <rect x="72" y="14" width="14" height="14" rx="2" fill="#ffffff" />
+          <rect x="75" y="17" width="8" height="8" rx="1" fill="#0f172a" />
+
+          <!-- Bottom Left Marker -->
+          <rect x="10" y="68" width="22" height="22" rx="3" fill="#0f172a" />
+          <rect x="14" y="72" width="14" height="14" rx="2" fill="#ffffff" />
+          <rect x="17" y="75" width="8" height="8" rx="1" fill="#0f172a" />
+
+          <!-- Data Grid Pixels -->
+          <rect x="36" y="10" width="6" height="6" rx="1" />
+          <rect x="46" y="10" width="8" height="6" rx="1" />
+          <rect x="58" y="14" width="6" height="8" rx="1" />
+          <rect x="38" y="20" width="6" height="6" rx="1" />
+          <rect x="48" y="22" width="6" height="6" rx="1" />
+
+          <rect x="10" y="38" width="6" height="6" rx="1" />
+          <rect x="20" y="42" width="6" height="6" rx="1" />
+          <rect x="12" y="52" width="8" height="6" rx="1" />
+          <rect x="24" y="56" width="6" height="6" rx="1" />
+
+          <rect x="36" y="36" width="10" height="10" rx="2" fill="#0D9488" />
+          <rect x="52" y="36" width="12" height="6" rx="1" fill="#1877F2" />
+          <rect x="40" y="50" width="8" height="12" rx="1" fill="#F85606" />
+          <rect x="54" y="48" width="10" height="10" rx="1" />
+
+          <rect x="72" y="36" width="6" height="8" rx="1" />
+          <rect x="82" y="40" width="8" height="6" rx="1" />
+          <rect x="70" y="50" width="10" height="6" rx="1" />
+          <rect x="84" y="54" width="6" height="8" rx="1" />
+
+          <rect x="36" y="70" width="8" height="6" rx="1" />
+          <rect x="48" y="68" width="6" height="8" rx="1" />
+          <rect x="42" y="80" width="10" height="6" rx="1" />
+          <rect x="58" y="74" width="6" height="12" rx="1" />
+          <rect x="70" y="70" width="8" height="6" rx="1" />
+          <rect x="82" y="76" width="8" height="8" rx="1" />
+          <rect x="72" y="84" width="8" height="6" rx="1" />
+        </svg>
+      </div>
+
+      <div class="mt-4 flex flex-col gap-2">
+        <button 
+          id="copyShareUrl" 
+          class="w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow transition-all active:scale-95"
+        >
+          Copy Page Link
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div id="toast" class="fixed bottom-6 z-50 bg-slate-900 border border-white/20 text-white text-xs px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span id="toastMsg">Link copied to clipboard!</span>
+  </div>
+
+  <script>
+    const qrModal = document.getElementById('qrModal');
+    const modalCard = document.getElementById('modalCard');
+    const openQrBtn = document.getElementById('openQrBtn');
+    const closeQrBtn = document.getElementById('closeQrBtn');
+    const copyUrlBtn = document.getElementById('copyUrlBtn');
+    const copyShareUrl = document.getElementById('copyShareUrl');
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toastMsg');
+
+    // Show Notification Toast
+    function showToast(message) {
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-16', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-16', 'opacity-0');
+      }, 2500);
+    }
+
+    // Modal Controls
+    function openModal() {
+      qrModal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      qrModal.classList.add('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+    }
+
+    openQrBtn.addEventListener('click', openModal);
+    closeQrBtn.addEventListener('click', closeModal);
+    qrModal.addEventListener('click', (e) => {
+      if (e.target === qrModal) closeModal();
+    });
+
+    // Copy URL function using execCommand for safe sandbox execution
+    function copyCurrentUrl() {
+      const dummyInput = document.createElement('input');
+      dummyInput.value = window.location.href;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      try {
+        document.execCommand('copy');
+        showToast('Link copied to clipboard!');
+      } catch (err) {
+        showToast('Unable to copy automatically');
+      }
+      document.body.removeChild(dummyInput);
+    }
+
+    copyUrlBtn.addEventListener('click', copyCurrentUrl);
+    copyShareUrl.addEventListener('click', () => {
+      copyCurrentUrl();
+      closeModal();
+    });
+  </script>
+</body>
+</html>
